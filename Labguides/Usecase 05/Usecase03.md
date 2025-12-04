@@ -1,4 +1,4 @@
-## Use case 03-Developing Intelligent Chat Applications with Azure RAG
+## Use case 05-Developing Intelligent Chat Applications with Azure RAG
 
 **Introduction**
 
@@ -402,6 +402,7 @@ Finally, you’ve deleted the deployed resources to effectively manage
 resources. This hands-on experience has equipped you with the skills to
 develop and manage intelligent chat applications using the Retrieval
 Augmented Generation pattern on Azure.
+
 
 
 
