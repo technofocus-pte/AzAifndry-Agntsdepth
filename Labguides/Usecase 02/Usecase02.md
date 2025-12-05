@@ -32,15 +32,7 @@ error-prone processes. This frees him to focus on higher-value
 engineering tasks—such as performance tuning, building new features, and
 advancing Zava’s modernization roadmap.
 
-With the combined power of the solution accelerator and Microsoft
-Foundry agents, Zava accelerates its modernization journey, ensures
-high-quality and consistent code translation, and builds a scalable,
-future-ready data environment.
-
-By adopting the Modernize Your Code Solution Accelerator, Zava
-accelerates its migration efforts, ensures consistent and accurate
-translations, and builds a scalable path forward for modernizing its
-entire data environment.
+.
 
 **Introduction**
 
@@ -435,3 +427,4 @@ code transformation, explored scalable modernization architecture, and
 successfully completed the end-to-end modernization process. This
 foundation equips you to accelerate large-scale modernization
 initiatives using Microsoft Foundry.
+
