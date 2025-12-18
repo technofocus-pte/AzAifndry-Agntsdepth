@@ -1,3 +1,5 @@
+## Usecase 08- Building Video Generation Workflows using Sora Model
+
 **Introduction**
 
 This lab provides a practical overview of **Sora**, OpenAI’s advanced
@@ -496,3 +498,4 @@ incorrect.](./media/image96.png)
 
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image97.png)
+
