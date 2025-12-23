@@ -122,8 +122,7 @@ Password: <+++@lab.CloudPortalCredential>(User1). *TAP*+++
 > content may be incorrect.](./media/image4.png)
 
 2.  Open a new browser and enter the following URL in the address bar:
-    +++
-    https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fignite25-LAB512-prototyping-multimodal-agents-with-microsoft-foundry-and-the-ai-toolkit%2Frefs%2Fheads%2Fmain%2Flab%2Fscript%2FLab512-arm-template.json+++ to
+    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fignite25-LAB512-prototyping-multimodal-agents-with-microsoft-foundry-and-the-ai-toolkit%2Frefs%2Fheads%2Fmain%2Flab%2Fscript%2FLab512-arm-template.json+++ to
     open the Azure Portal.
 
 3.  On **Custom deployment** window, under the **Basics** tab, enter the
@@ -1257,5 +1256,6 @@ evaluations to assess and refine its performance.
 
 By completing this usecase, you have gained end-to-end experience in
 designing, augmenting, integrating, and evaluating multimodal agents.
+
 
 
