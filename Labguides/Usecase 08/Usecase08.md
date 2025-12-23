@@ -498,4 +498,10 @@ incorrect.](./media/image96.png)
 
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image97.png)
+![A screenshot of a computer program AI-generated content may be
+incorrect.](./media/imagea1.png)
+![A screenshot of a computer program AI-generated content may be
+incorrect.](./media/imagea2.png)
+![A screenshot of a computer program AI-generated content may be
+incorrect.](./media/imagea3.png)
 
