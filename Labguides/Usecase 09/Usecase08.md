@@ -317,23 +317,23 @@ incorrect.](./media/image40.png)
 12. If prompted to select the path, then select the **Python version
     3.13.1 or later version** path as shown in the image.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image41.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image41.png)
+13.	Select the cell. Then, execute the cell by clicking on the start icon.
+    ![A screenshot of a computer program AI-generated content may be
+    incorrect.](./media/image42.png)
+14.	To check the OpenAI, system versions, select 5th ,6th and 7th cells. Then, execute the cell by clicking on the start icon.
+      ![A screenshot of a computer program AI-generated content may be
+      incorrect.](./media/image43.png)
+15.	Select the cell, update your **endpoint** and **API key**, and then execute the cell by clicking the Start icon.
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image44.png)
 
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image42.png)
-
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image43.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image44.png)
-
-![A screen shot of a computer program AI-generated content may be
-incorrect.](./media/image45.png)
-
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image46.png)
+    ![A screen shot of a computer program AI-generated content may be
+    incorrect.](./media/image45.png)
+16.	Select Run All Examples to execute all the sample cells.
+    ![A screenshot of a computer program AI-generated content may be
+    incorrect.](./media/image46.png)
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image47.png)
@@ -453,45 +453,46 @@ incorrect.](./media/image80.png)
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image81.png)
-
+4.	If you see a dialog box - **Do you trust the authors of the files in this folder?**, then click on **Yes, I trust the author** 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image82.png)
-
+5.	In Visual Studio Code dropdown the **VISIONARY-LAB**, click on **.env** file. 
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image83.png)
-
+6.	Update the parameters ,replace **Azure OpenAI resource name, Sora deployment,LLM deployment as gpt 4.1 and  Azure OpenAI Key**(The values that you have saved in your notepad in the Task 2) and **Save** the file.
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image84.png)
-
+7.	In **Visual Studio Code** dropdown the **VISIONARY-LAB** and select  **sora-api-starter.ipynb** notebook.
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image85.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image86.png)
+8.	In the main page of **Visual Studio Code** editor, scroll down to install requirements heading and run the 1st cell. If prompted to select the environment, then select **Python Environments** as shown in the image.
+  ![A screenshot of a computer AI-generated content may be
+  incorrect.](./media/image86.png)
 
 ![](./media/image87.png)
 
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image88.png)
-
+9.	Set up the environment by loading the .env file and initializing the Azure OpenAI Sora client for video generation and the GPT-4.1 client for video analysis.
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image89.png)
-
+10.	Select the cell and run it to submit a video generation job to the Azure OpenAI Sora REST API using a prompt and video parameters, and capture the returned job ID and status
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image90.png)
-
+11.	Run this cell to define helper functions that generate concise video filenames using an LLM and poll the Azure OpenAI Sora service until the video generation job completes.
 ![](./media/image91.png)
-
+12.	Select the cell and run it to choose a predefined use-case prompt and verify the video description before starting the video generation job.
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image92.png)
 
 ![](./media/image93.png)
-
+13.	Select the cell and run it to retrieve the completed Sora video generation job, generate a concise filename using GPT-4.1, download the video files locally, and analyze the video content.
 ![A screen shot of a computer program AI-generated content may be
 incorrect.](./media/image94.png)
 
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image95.png)
+14. Select the cell and run it to list recent Azure OpenAI Sora video generation jobs, calculate their execution duration, and display job details in a table for monitoring and management.
 
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image96.png)
@@ -504,4 +505,5 @@ incorrect.](./media/imagea1.png)
 incorrect.](./media/imagea2.png)
 ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/imagea3.png)
+
 
