@@ -191,8 +191,7 @@ incorrect.](./media/image10.png)
 ## Task 2: Open Github Codespaces environment
 
 1.  Open your browser, navigate to the address bar, type or paste the
-    following URL: +++
-    https://github.com/microsoft/Build-your-own-copilot-Solution-Accelerator+++
+    following URL: +++https://github.com/microsoft/Build-your-own-copilot-Solution-Accelerator+++
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image12.png)
@@ -576,3 +575,4 @@ client insights, such as past concerns, asset details, and financial
 trends. The lab concludes with cleanup steps for deleting the resource
 group. Overall, the guide provides an end-to-end hands-on experience for
 building and deploying a working copilot application in Azure.
+
