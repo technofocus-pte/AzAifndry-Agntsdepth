@@ -130,7 +130,13 @@ Password: <+++@lab.CloudPortalCredential>(User1). *TAP*+++
     following details to deploy the custom template and then click
     on **Review + create.**
 
-[TABLE]
+    |   |   |
+    |----|---|
+    |Subscription	|Select the assigned subscription|
+    |Resource group|Select the assigned Resource group|
+    |Region|	Select **Sweden Central**|
+    |Unique Suffix	|Enter  Lab instant ID|
+
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image5.png)
@@ -1251,4 +1257,5 @@ evaluations to assess and refine its performance.
 
 By completing this usecase, you have gained end-to-end experience in
 designing, augmenting, integrating, and evaluating multimodal agents.
+
 
