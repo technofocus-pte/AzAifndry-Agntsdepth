@@ -125,7 +125,7 @@ incorrect.](./media/image12.png)
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image13.png)
 
-2.  In Azure AI Foundry page , select **Azure OpenAI** under the **Use
+2.  In Microsoft Foundry page , select **Azure OpenAI** under the **Use
     with AI Foundry**
 
 ![A screenshot of a computer AI-generated content may be
@@ -440,3 +440,4 @@ This usecase presents a Streamlit-based web application that allows
 users to upload images and receive descriptive classifications powered
 by Azure OpenAI's GPT-4o model. It highlights the model’s ability to
 interpret visual content and generate natural language responses.
+
