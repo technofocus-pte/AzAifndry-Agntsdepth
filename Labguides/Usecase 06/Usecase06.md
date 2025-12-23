@@ -254,7 +254,7 @@ incorrect.](./media/image22.png)
 incorrect.](./media/image23.png)
 
 5.  To create an environment for Azure resources, enter any name of your
-    choice and press enter (eg :+++ byocaappXXXX+++)
+    choice and press enter (eg :+++byocaappXXXX+++)
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image24.png)
@@ -575,4 +575,5 @@ client insights, such as past concerns, asset details, and financial
 trends. The lab concludes with cleanup steps for deleting the resource
 group. Overall, the guide provides an end-to-end hands-on experience for
 building and deploying a working copilot application in Azure.
+
 
