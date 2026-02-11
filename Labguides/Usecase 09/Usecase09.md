@@ -1,4 +1,5 @@
-## Usecase 09- Building Video Generation Workflows using Sora Model
+
+# Usecase 09 - Building Video Generation Workflows using Sora Model
 
 **Introduction**
 
@@ -31,480 +32,539 @@ for content creation and innovation.
 In this task, we will identify and understand the credentials that we
 will be using throughout the lab.
 
-1.  Instructions tab hold the lab guide with the instructions to be
+-  Instructions tab hold the lab guide with the instructions to be
     followed throughout the lab.
 
-2.  Resources tab has got the credentials that will be needed for
+-  Resources tab has got the credentials that will be needed for
     executing the lab.
 
-- URL – URL to the Azure portal
+- URL – URL to the Azure portal
 
-- **Subscription – This is the ID of the subscription assigned to you**
+- **Subscription – This is the ID of the subscription assigned to you**
 
-- **Username – The user id with which you need to login to the Azure
+- **Username – The user id with which you need to login to the Azure
   services.**
 
-- **Password – Password to the Azure login. Let us call this Username
+- **Password – Password to the Azure login. Let us call this Username
   and password as Azure login credentials. We will use these creds
   wherever we mention Azure login credentials.**
 
-- **Resource Group – The Resource group assigned to you.**
+- **Resource Group – The Resource group assigned to you.**
 
-**\[!Alert\] Important: Make sure you create all your resources under
-this Resource group**
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image1.png)
-
-3.  Help tab holds the Support information. The ID value here is the Lab
-    instance ID which will be used during the lab execution.
+>[!alert] Make sure you create all your resources under
+this Resource group.
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image2.png)
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image1.png)
 
-##  Task 1 : Register Service provider
-
-1.  **Open a browser go to +++ sign in with your cloud slice account
-    below.**
-
-- **Username: <+++@lab.CloudPortalCredential>(User1).Username+++**
-
-- **Password: \<<+++@lab.CloudPortalCredential>(User1).Password\>+++**
+- Help tab holds the Support information. The ID value here is the Lab instance ID which will be used during the lab execution.
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image3.png)
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image2.png)
 
-> ![A screenshot of a login box AI-generated content may be
-> incorrect.](./media/image4.png)
+##  Task 1 : Register Service provider
 
-4.  Click on Subscriptions tile.
+1. Open a browser go to +++https://portal.azure.com+++ and sign in with
+your cloud slice account below.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image5.png)
+    - **Username:** +++@lab.CloudPortalCredential(User1).Username+++
+
+    - **TAP:** +++@lab.CloudPortalCredential(User1).AccessToken+++
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image3.png)
+
+    ![A screenshot of a login box AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image4.png)
+
+4.  Click on Subscriptions tile.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image5.png)
 
 5.  Click on the subscription name.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image6.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image6.png)
 
-6.  Expand Settings from the left navigation menu. Click on Resource
-    providers, enter +++**Microsoft.AlertsManagement**+++ and select it,
-    and then click Register.
+6.  Expand Settings from the left navigation menu. Click on Resource
+    providers, enter +++Microsoft.AlertsManagement+++ and select it,
+    and then click Register.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image7.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image7.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image8.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image8.png)
 
-7.  Click on Resource providers,
-    enter +++**Microsoft.DBforPostgreSQL**+++ and select i,t, and then
-    click Register.
+7.  Click on Resource providers,
+    enter +++Microsoft.DBforPostgreSQL+++ and select it, and then
+    click Register.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image9.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image9.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image10.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image10.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image11.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image11.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image12.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image12.png)
 
-8.  Repeat the steps \#10 and \#11 to register the following Resource
+8.  Repeat the steps #10 and #11 to register the following Resource
     providers.
 
-- **Microsoft.Search**
+    - +++Microsoft.Search+++
 
-- **Microsoft.Web**
+    - +++Microsoft.Web+++
 
-- **Microsoft.ManagedIdentity**
+    - +++Microsoft.ManagedIdentity+++
 
 ## Task 2: Create Azure OpenAI resource
 
-1.  In Azure portal, search box, type **+++Microsoft Foundry+++** and
-    then click on the Microsoft Foundry.
+1.  In Azure portal, search box, type +++Microsoft Foundry+++ and
+    then click on the Microsoft Foundry.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image13.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image13.png)
 
 2.  In Azure AI Foundry page , select **Azure OpenAI** under the **Use
     with AI Foundry**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image14.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image14.png)
 
-3.  Click on **+Create Azure OpenAI**
+3.  Click on **Create** then select **Azure OpenAI**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image15.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image15.png)
 
-4.  In the Create Azure OpenAI window, under the Basics tab, enter the
-    following details and click on the **Next** button.
+4.  In the Create Azure OpenAI window, under the Basics tab, enter the
+    following details and click on the **Next** button.
 
-&nbsp;
+    -  **Subscription:** **@lab.CloudSubscription.Name**
 
-1)  Subscription: Select the assigned subscription
+    -  **Resource group:**  **@lab.CloudResourceGroup(ResourceGroup1).Name**
 
-2)  Resource group:  Select the assigned Resource group
+    -  **Region:** **@lab.CloudResourceGroup(ResourceGroup1).Location**
+    
+    >[!Note] For this lab, you will use a  **SORA** model. If there is a **quota or availability issue**, please select a new, available region. This model is currently only available in [certain regions](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#embeddings-models). 
 
-3)  Region: For this lab, you will use a  **SORA** model. This model is
-    currently only available in [certain
-    regions](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#embeddings-models).
-    Please select a region from this list, In this lab East US 2 is
-    using for this resource.
+    -  **Name:** +++aoaisora@lab.LabInstance.Id+++
 
-4)  Name: aoaisoraXXXXX (XXXXX can be Lab instant ID)
+    -  **Pricing Tier:** **Standard S0**
 
-5)  Pricing tier: Select Standard S0
+    >[!Note] To find your lab instant ID, select 'Help' and copy the instant ID.
 
-Note: To find your lab instant ID, select 'Help' and copy the instant
-ID.
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image16.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image16.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image17.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image17.png)
+5.  In the Network tab, leave all the radio buttons in the default
+    state, and click on the **Next** button.
 
-5.  In the Network tab, leave all the radio buttons in the default
-    state, and click on the **Next** button.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image18.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image18.png)
+6.  In the Tags tab, leave all the fields in the default state, and
+    click on the **Next** button.
 
-6.  In the Tags tab, leave all the fields in the default state, and
-    click on the **Next** button.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image19.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image19.png)
+7.  In the **Review + submit** tab, once the Validation is Passed, click
+    on the **Create** button.
 
-7.  In the **Review + submit** tab, once the Validation is Passed, click
-    on the **Create** button.
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image20.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image20.png)
 
 8.  Wait for the deployment to complete. The deployment will take around
     2-3 minutes.
 
-&nbsp;
+9.  On **Microsoft.CognitiveServicesOpenAI** window, after the deployment is
+    completed, click on **Go to resource** button.
 
-9.  On Microsoft.CognitiveServicesOpenAI window, after the deployment is
-    completed, click on Go to resource button.
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image21.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image21.png)
 
 10. In the Overview section of the **Azure OpenAI home** page, copy the
     **Azure OpenAI** **resource name** and save them in a notepad.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image22.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image22.png)
 
-11. Click on **Keys and Endpoints** from the left navigation menu and
-    then copy the endpoint value in a notepad to **AzureAI
-    ENDPOINT** and **key** to a variable AzureAIKey.
+11. Click on **Keys and Endpoints** from the left navigation menu and
+    then copy the endpoint value in a notepad to **AzureAI
+    ENDPOINT** and **key** to a variable AzureAIKey.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image23.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image23.png)
 
-12. On the aoaisoraXXXXX window, click on Overview in the left-sided
-    navigation menu, scroll down to Explore and deploy tile and click
-    on Explore Azure AI Foundry portal button as shown in the below
-    image to open Azure AI Foundry portal in a new browser.
+12. On the **aoaisora@lab.LabInstance.Id** window, click on Overview in the left-sided
+    navigation menu, scroll down to Explore and deploy tile and click
+    on **Explore Azure AI Foundry** portal button as shown in the below
+    image to open Azure AI Foundry portal in a new browser.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image24.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image24.png)
 
 ## Task 3: Deploying an Azure OpenAI model Sora
 
-1.  On the **Azure AI Foundry** **| Azure Open AI Service** homepage,
-    navigate to Components section and click on Deployments.
+1.  On the **Azure AI Foundry** **| Azure Open AI Service** homepage,
+    navigate to Components section and click on Deployments.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image25.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image25.png)
 
-2.  In the Deployments window, drop down the +Deploy model and
-    select Deploy base model.
+2.  In the Deployments window, drop down the +Deploy model and
+    select Deploy base model.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image26.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image26.png)
 
-3.  In the Select a model dialog box, navigate and carefully
-    select **sora**, then click on **Confirm** button.
+3.  In the Select a model dialog box, navigate and carefully
+    select **sora**, then click on **Confirm** button.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image27.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image27.png)
 
-4.  In the Deploy model **sora** dialog box, under the Deployment
-    name field, ensure that **sora**, select the Deployment type
-    as **Standard**. Then click on the **Deploy** button.
+4.  In the Deploy model **sora** dialog box, under the Deployment
+    name field, ensure that **sora**, select the Deployment type
+    as **Standard**. Then click on the **Deploy** button.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image28.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image28.png)
 
-5.  In the Deployments window, drop down the **+Deploy model** and
-    select **Deploy base model.**
+5.  In the Deployments window, drop down the **+Deploy model** and
+    select **Deploy base model.**
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image29.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image29.png)
 
-6.  In the Select a model dialog box, navigate and carefully
-    select **gpt-4.1**, then click on **Confirm** button.
+6.  In the Select a model dialog box, navigate and carefully
+    select **gpt-4.1**, then click on **Confirm** button.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image30.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image30.png)
 
-7.  In the Deploy model **gpt 4.1** dialog box, under the Deployment
-    name field, ensure that **gpt 4.1**, select the Deployment type
-    as Global **Standard**. Then click on the **Deploy** button.
+7.  In the Deploy model **gpt 4.1** dialog box, under the Deployment
+    name field, ensure that **gpt 4.1**, select the Deployment type
+    as Global **Standard**. Then click on the **Deploy** button.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image31.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image31.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image32.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image32.png)
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image33.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image33.png)
 
 ## Task 4: Generate AI-Powered Videos Using Sora with Azure AI Foundry
 
-1.  In your Windows search box, type Visual Studio, then click on Visual
+1.  In your Windows search box, type Visual Studio, then click on Visual
     Studio Code.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image34.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image34.png)
 
-2.  In the Visual Studio Code editor, click on File, then navigate and
-    click on Open Folder.
+2.  In the Visual Studio Code editor, click on File, then navigate and
+    click on Open Folder.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image35.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image35.png)
 
-8.  Navigate and select **sora** folder from C**:\LabFiles** and click
-    on the **Select** **Folder** button.
+8.  Navigate and select **sora** folder from **C:\Lab Files** and click
+    on the **Select** **Folder** button.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image36.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image36.png)
 
-9.  If you see a dialog box - **Do you trust the authors of the files in
-    this folder?**, then click on **Yes, I trust the author**.
+9.  If you see a dialog box - **Do you trust the authors of the files in
+    this folder?**, then click on **Yes, I trust the author**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image37.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image37.png)
 
-10. In Visual Studio Code dropdown the **SORA** and select **SORA with
-    Azure AI Foundry.ipynb** notebook.
+10. In Visual Studio Code dropdown the **SORA** and select **SORA with
+    Azure AI Foundry.ipynb** notebook.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image38.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image38.png)
+
+1. Select the **Extensions** icon in the left hand panel.
+
+1. Search for and select +++Jupyter+++.
+
+1. On the **Jupyter** page, select **Install**.
+
+1. After **Jupyter** installs, select the **Uninstall** dropdown and select **Install specific version**.
+
+1. Select version **2024.11.0**.
+
+1. Once that version finishes installing, select **Restart Extensions**.
+
+1. Search for and select +++Python+++ in the **Extensions** seatch bar.
+
+1. Select **Install**.
+
+1. Go back to the notebook **SORA with Azure AI Foundry.ipynb**. 
+
 
 11. In the main page of Visual Studio Code editor, scroll down
-    to **install requirements** heading and run the 1^(st) cell. If
-    prompted to select the environment, then select **Python
-    Environments** as shown in the image.
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image39.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image40.png)
-
-12. If prompted to select the path, then select the **Python version
-    3.13.1 or later version** path as shown in the image.
+    to **install requirements** heading and run the 1st cell. If
+    prompted to select the environment, then select **Python
+    Environments** as shown in the image.
 
     ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image41.png)
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image39.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image40.png)
+
+12. If prompted to select the path, then select the **Python version
+    3.13.1 or later version** path as shown in the image.
+
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image41.png)
+
+1. Select **Install** when prompted through the different window dialogs.
+
 13.	Select the cell. Then, execute the cell by clicking on the start icon.
+
     ![A screenshot of a computer program AI-generated content may be
-    incorrect.](./media/image42.png)
-14.	To check the OpenAI, system versions, select 5th ,6th and 7th cells. Then, execute the cell by clicking on the start icon.
-      ![A screenshot of a computer program AI-generated content may be
-      incorrect.](./media/image43.png)
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image42.png)
+
+14.	To check the OpenAI, system versions, select 5th, 6th and 7th cells. Then, execute the cell by clicking on the start icon.
+    ![A screenshot of a computer program AI-generated content may be
+      incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image43.png)
+
+
 15.	Select the cell, update your **endpoint** and **API key**, and then execute the cell by clicking the Start icon.
+
     ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image44.png)
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image44.png)
 
     ![A screen shot of a computer program AI-generated content may be
-    incorrect.](./media/image45.png)
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image45.png)
+
 16.	Select Run All Examples to execute all the sample cells.
+        ![A screenshot of a computer program AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image46.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image47.png)
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image48.png)
+
+    ![A person and dog in the water AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image49.png)
+
+    ![A person walking in the water AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image50.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image51.png)
+
+    ![A person and child in the water AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image52.png)
+
     ![A screenshot of a computer program AI-generated content may be
-    incorrect.](./media/image46.png)
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image53.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image47.png)
+    ![A screenshot of a video AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image54.png)
 
-![](./media/image48.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image55.png)
 
-![A person and dog in the water AI-generated content may be
-incorrect.](./media/image49.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image56.png)
 
-![A person walking in the water AI-generated content may be
-incorrect.](./media/image50.png)
+    ![A screenshot of a video AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image57.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image51.png)
+    ![A screenshot of a video AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image58.png)
 
-![A person and child in the water AI-generated content may be
-incorrect.](./media/image52.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image59.png)
 
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image53.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image60.png)
 
-![A screenshot of a video AI-generated content may be
-incorrect.](./media/image54.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image61.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image55.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image62.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image56.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image63.png)
 
-![A screenshot of a video AI-generated content may be
-incorrect.](./media/image57.png)
+    ![A close up of a person's eye AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image64.png)
 
-![A screenshot of a video AI-generated content may be
-incorrect.](./media/image58.png)
+    ![A screenshot of a computer screen AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image65.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image59.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image66.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image60.png)
+    ![A close up of an eye AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image67.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image61.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image68.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image62.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image69.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image63.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image70.png)
 
-![A close up of a person's eye AI-generated content may be
-incorrect.](./media/image64.png)
+    ![A screenshot of a video AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image71.png)
 
-![A screenshot of a computer screen AI-generated content may be
-incorrect.](./media/image65.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image72.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image66.png)
+    ![A screenshot of a computer screen AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image73.png)
 
-![A close up of an eye AI-generated content may be
-incorrect.](./media/image67.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image74.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image68.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image75.png)
 
-![](./media/image69.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image76.png)
 
-![](./media/image70.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image77.png)
 
-![A screenshot of a video AI-generated content may be
-incorrect.](./media/image71.png)
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image78.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image72.png)
-
-![A screenshot of a computer screen AI-generated content may be
-incorrect.](./media/image73.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image74.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image75.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image76.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image77.png)
-
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image78.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image79.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image79.png)
 
 ## Task 5: Create Videos with the Azure OpenAI Sora API
 
-1.  In your Windows search box, type Visual Studio, then click on Visual
+1.  In your Windows search box, type Visual Studio, then click on Visual
     Studio Code.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image34.png)
+	![A screenshot of a computer AI-generated content may be
+	 incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image34.png)
 
-2.  In the Visual Studio Code editor, click on File, then navigate and
-    click on Open Folder.
+2.  In the Visual Studio Code editor, click on File, then navigate and
+    click on Open Folder.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image35.png)
+	![A screenshot of a computer AI-generated content may be
+	 incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image35.png)
 
-3.  Navigate and select **visionary-lab** folder
-    from C**:\LabFiles** and click on the **Select** **Folder** button.
+3.  Navigate and select **visionary-lab** folder
+    from **C:\Lab Files** and click on the **Select** **Folder** button.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image80.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image80.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image81.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image81.png)
+
 4.	If you see a dialog box - **Do you trust the authors of the files in this folder?**, then click on **Yes, I trust the author** 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image82.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image82.png)
+
 5.	In Visual Studio Code dropdown the **VISIONARY-LAB**, click on **.env** file. 
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image83.png)
-6.	Update the parameters ,replace **Azure OpenAI resource name, Sora deployment,LLM deployment as gpt 4.1 and  Azure OpenAI Key**(The values that you have saved in your notepad in the Task 2) and **Save** the file.
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image84.png)
+
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image83.png)
+
+6.	Update the parameters, replace **Azure OpenAI resource name, Sora deployment, LLM deployment as gpt 4.1 and  Azure OpenAI Key** (The values that you have saved in your notepad in Task 2) and **Save** the file.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image84.png)
+
 7.	In **Visual Studio Code** dropdown the **VISIONARY-LAB** and select  **sora-api-starter.ipynb** notebook.
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image85.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image85.png)
+
 8.	In the main page of **Visual Studio Code** editor, scroll down to install requirements heading and run the 1st cell. If prompted to select the environment, then select **Python Environments** as shown in the image.
-  ![A screenshot of a computer AI-generated content may be
-  incorrect.](./media/image86.png)
 
-![](./media/image87.png)
+    ![A screenshot of a computer AI-generated content may be
+  incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image86.png)
 
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image88.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image87.png)
+
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image88.png)
+
 9.	Set up the environment by loading the .env file and initializing the Azure OpenAI Sora client for video generation and the GPT-4.1 client for video analysis.
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image89.png)
+
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image89.png)
+
 10.	Select the cell and run it to submit a video generation job to the Azure OpenAI Sora REST API using a prompt and video parameters, and capture the returned job ID and status
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image90.png)
+
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image90.png)
+
 11.	Run this cell to define helper functions that generate concise video filenames using an LLM and poll the Azure OpenAI Sora service until the video generation job completes.
-![](./media/image91.png)
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image91.png)
+	
 12.	Select the cell and run it to choose a predefined use-case prompt and verify the video description before starting the video generation job.
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image92.png)
 
-![](./media/image93.png)
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image92.png)
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image93.png)
+	
 13.	Select the cell and run it to retrieve the completed Sora video generation job, generate a concise filename using GPT-4.1, download the video files locally, and analyze the video content.
-![A screen shot of a computer program AI-generated content may be
-incorrect.](./media/image94.png)
 
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image95.png)
+    ![A screen shot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image94.png)
+
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image95.png)
+
 14. Select the cell and run it to list recent Azure OpenAI Sora video generation jobs, calculate their execution duration, and display job details in a table for monitoring and management.
 
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image96.png)
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image96.png)
 
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image97.png)
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/imagea1.png)
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/imagea2.png)
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/imagea3.png)
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/image97.png)
+
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/imagea1.png)
+
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/imagea2.png)
+
+    ![A screenshot of a computer program AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2009/media/imagea3.png)
 
 
+#Task 6: Delete the resources
+
+1. Navigate back to the Azure home page. 
+
+1. Select **Resource Group**.
+
+1. Select **@lab.CloudResourceGroup(ResourceGroup1).Name**.
+
+1. Select all the reosources in **@lab.CloudResourceGroup(ResourceGroup1).Name**.
+
+1. Select **Delete resource group**.
+
+1. Enter +++@lab.CloudResourceGroup(ResourceGroup1).Name+++ in the text box to confirm deletion.
+
+1. Select **Delete**.
 

@@ -1,4 +1,5 @@
-# Usecase 02- Modernize your code with agents with Microsoft Foundry 
+
+# Usecase 02 - Modernize your code with agents with Microsoft Foundry 
 
 **Scenario: Modernizing Large Data Estates for Contoso**
 
@@ -32,7 +33,6 @@ error-prone processes. This frees him to focus on higher-value
 engineering tasks—such as performance tuning, building new features, and
 advancing Zava’s modernization roadmap.
 
-.
 
 **Introduction**
 
@@ -83,7 +83,7 @@ effort and technical risk.
 - Clean up deployed Azure resources safely after completing the lab.
 
 ![A diagram of a code AI-generated content may be
-incorrect.](./media/image1.png)
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image1.png)
 
 **Prerequisites**
 
@@ -92,319 +92,282 @@ incorrect.](./media/image1.png)
   If you do not have an account, please create one by visiting:  
   https://github.com/signup
 
-## Task 1: Register Service provider
+## Task 1: Retrieve resource group name and location
 
-1.  Open a browser go to +++https://portal.azure.com+++ and sign in with
+1.  Open a browser go to +++https://portal.azure.com+++ and sign in with
     your cloud slice account below.
 
-Username: <+++@lab.CloudPortalCredential>(User1).Username+++
+	Username: +++@lab.CloudPortalCredential(User1).Username+++
 
-Password: <+++@lab.CloudPortalCredential>(User1). *TAP*+++
+	Temporary Access Token (TAP): +++@lab.CloudPortalCredential(User1).AccessToken+++
+	
+1.  Type in +++Resource group+++ in the search bar and
+    select **Resource groups**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image2.png)
+	![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image9.png)
 
-![A login box with a red box and blue box with text AI-generated content
-may be incorrect.](./media/image3.png)
+2.  Select **ResourceGroup1**.
 
-2.  Click on **Subscriptions** tile.
+	![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image10.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image4.png)
-
-3.  Click on the subscription name.
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image5.png)
-
-4.  Expand Settings from the left navigation menu. Click on **Resource
-    providers**, enter **+++** **Microsoft.CognitiveServices+++** and
-    select i,t, and then click **Register**.
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image6.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image7.png)
-
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image8.png)
-
-5.  Repeat the steps \#4 to register the following Resource provider.
-
-- +++**Microsoft.AlertsManagement**+++
-
-## Task 2: Retrieve resource group name and location
-
-1.  Type in +++**Resource group+++** in the search bar and
-    select **Resource groups**.
-
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image9.png)
-
-2.  Click on your assigned **Resource group**.
-
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image10.png)
-
-3.  In **Resource group** page, copy **resource group name and
-    location** and paste them in a notepad, then **Save** the notepad to
+3.  In **Resource group** page, copy **resource group name and
+    location** and paste them in a notepad, then **Save** the notepad to
     use the information in the upcoming tasks.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image11.png)
+	![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image11.png)
 
-## Task 3: Open Github Codespaces environment
+## Task 2: Open Github Codespaces environment
 
 1.  Open your browser, navigate to the address bar, type or paste the
-    following URL: +++
-    https://github.com/technofocus-pte/codesolutionaccelerator+++
+    following URL: +++https://github.com/technofocus-pte/codesolutionaccelerator+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image12.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image12.png)
 
-2.  Click on **fork** to fork the repo. Give unique name to the repo and
-    click on **Create repo** button.
+2.  Click on **fork** to fork the repo. Give unique name to the repo and
+    click on **Create repo** button.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image13.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image13.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image14.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image14.png)
 
-3.  Click on **Code -\> Codespaces -\> Codespaces+**
+3.  Click on **Code -\> Codespaces -\> Create codespace on main**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image15.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image15.png)
 
 4.  Wait for the Codespaces environment to setup .It takes few minutes
-    to setup completely
+    to setup completely.
+	
+	>[!Alert] If the codespace fails to load, at the bottom of the Github repo page, select to deploy through **Visual Studio Code (web)**.
+	>Enter environment name: +++cmsapp@lab.LabInstance.Id+++ and **skip** to **Task 3, Step 5**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image16.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image16.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image17.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image17.png)
 
-## Task 4: Provision Services and deploy application to Azure
+## Task 3: Provision Services and deploy application to Azure
 
 1.  Run the following command on the Terminal. It generates the code to
     copy. Copy the code and press Enter.
 
-+++azd auth login+++
+	+++azd auth login+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image18.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image18.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image19.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image19.png)
 
 5.  Default browser opens to enter the generated code to verify. Enter
-    the code and click **Next**.
+    the code and click **Next**.
 
-![A screenshot of a computer error AI-generated content may be
-incorrect.](./media/image20.png)
+    ![A screenshot of a computer error AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image20.png)
 
 6.  Sign in with your Azure credentials.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image21.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image21.png)
 
-![A screenshot of a computer error AI-generated content may be
-incorrect.](./media/image22.png)
+    ![A screenshot of a computer error AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image22.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image23.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image23.png)
 
 7.  To create an environment for Azure resources, run the following
-    Azure Developer CLI command.It asks you to enter environment name
-    .Enter any name of your choice and press enter (eg
-    :+++cmsaappXXXX+++)
+    Azure Developer CLI command. 
 
-**Note:** When creating an environment, ensure that the name consists of
-lowercase letters.
+	>[!Note] When creating an environment, ensure that the name consists of
+	lowercase letters.
 
-+++azd env new+++
+	+++azd env new+++
+	
+	>[!Alert] Enter environment name: +++cmsapp@lab.LabInstance.Id+++.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image24.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image24.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image25.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image25.png)
 
 8.  Run below command to provision the services to Azure, build your
     container.
 
-+++azd env set AZURE_RESOURCE_GROUP {Name of existing resource group}+++
+	+++azd env set AZURE_RESOURCE_GROUP ResourceGroup1+++
 
-![A screenshot of a computer code AI-generated content may be
-incorrect.](./media/image26.png)
+    ![A screenshot of a computer code AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image26.png)
 
-9.  Run azd up - This will provision Azure resources
+9.  Run azd up - This will provision Azure resources
 
-+++azd up+++
+	+++azd up+++
 
-![A screenshot of a computer code AI-generated content may be
-incorrect.](./media/image27.png)
+    ![A screenshot of a computer code AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image27.png)
 
-10. Select below values.
+10. When prompted, select your **subscription - @lab.CloudSubscription.Name** to create the resources and
+    select the region **@lab.CloudResourceGroup(ResourceGroup1).Location**.
 
-- **Select an Azure Subscription to use** : Select your subscription
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image28.png)
 
-- **azureAiServiceLocation**: Sweden Central
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image29.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image28.png)
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image29.png)
-
-11. This deployment will take *7-10 minutes* to provision the resources
+11. This deployment will take *7-10 minutes* to provision the resources
     in your account and set up the solution with sample data
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image30.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image30.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image31.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image31.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image32.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image32.png)
 
-## Task 5: Verify deployed resources in the Azure portal
+## Task 4: Verify deployed resources in the Azure portal
 
-1.  Select **Resource groups**
+1.  Select **Resource groups**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image33.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image33.png)
 
-2.  Click on your assigned **Resource group**.
+2.  Click on your assigned **Resource group**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image34.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image34.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image35.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image35.png)
 
 3.  Make sure the below resource got deployed successfully
 
-- Foundry
+	- Foundry
 
-- Foundry project
+	- Foundry project
 
-- Container App ( backend and frontend)
+	- Container App ( backend and frontend)
 
-- Azure CosmosDB account
+	- Azure CosmosDB account
 
-- Container App Environment
+	- Container App Environment
 
-- Keyvault
+	- Keyvault
 
-- Azure Storage account
+	- Azure Storage account
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image36.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image36.png)
 
 4.  Select **Foundry**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image37.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image37.png)
 
 5.  Click **Go to Foundry portal** to verify that the model has been
     successfully deployed
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image38.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image38.png)
 
 6.  Go back to resorcegroup and select **Frontend Container App**
 
-![A screenshot of a chat AI-generated content may be
-incorrect.](./media/image39.png)
+    ![A screenshot of a chat AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image39.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image40.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image40.png)
 
 7.  Click on the **Application Url**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image41.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image41.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image42.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image42.png)
 
-## Task 6: Sample Workflow for Modernizing SQL Code with Modernize-your-code Solution Accelerator
+## Task 5: Sample Workflow for Modernizing SQL Code with Modernize-your-code Solution Accelerator
 
 1.  In the Container App , select **Browse files**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image43.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image43.png)
 
-2.  Navigate to **C:\Labfiles\\** **informix** location and
-    select **q1_informix.sql** from *simple* folder
-    and **F1.sql** and **F2.sql** from *functions* folder, then click on
-    the **Open** button.
+2.  Navigate to **C:\Labfiles\\** **informix** location and
+    select **q1_informix.sql** from *simple* folder
+    and **F1.sql** and **F2.sql** from *functions* folder, then click on
+    the **Open** button.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image44.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image44.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image45.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image45.png)
 
-3.  Click **Start Translating** Button to Process Files
+3.  Click **Start Translating** Button to Process Files
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image46.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image46.png)
 
-*Average translating time is 01 minute 15 seconds*
+	*Average translating time is 01 minute 15 seconds*
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image47.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image47.png)
 
-**Review**
+	**Review**
 
-- The batch Processing page will open and the translation process will
-  be visible. One file at a time will be processed and others will be in
-  queued state.
+	- The batch Processing page will open and the translation process will
+	  be visible. One file at a time will be processed and others will be in
+	  queued state.
 
-- Once the batch processing is done for any file, the file is available
-  to review.
+	- Once the batch processing is done for any file, the file is available
+	  to review.
 
-- Once the translation process is complete for a batch, it becomes
-  available for review in the History panel (located at the top right).
+	- Once the translation process is complete for a batch, it becomes
+	  available for review in the History panel (located at the top right).
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image48.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image48.png)
 
-4.  Once the files are translated, the **Download all as .zip** button
+4.  Once the files are translated, the **Download all as .zip** button
     at the bottom left will be enabled to download the translated files.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image49.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image49.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image50.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image50.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image51.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image51.png)
 
-## Task 7: Clean up all the resources
+## Task 6: Clean up all the resources
 
-1.  Switch back to **Azure portal -\> Resource group-\> Resource group
+1.  Switch back to **Azure portal -\> Resource group-\> Resource group
     name.**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image52.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image52.png)
 
 2.  Select all the resources and then click on Delete as shown in the
-    below image. (**DO NOT DELETE** resource group)
+    below image. (**DO NOT DELETE** resource group)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image53.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image53.png)
 
-3.  Type delete on the text box and then click on **Delete**.
+3.  Type delete on the text box and then click on **Delete**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image54.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image54.png)
 
 **Summary**
 
