@@ -24,6 +24,9 @@ understanding.
 - Inspire developers to explore GPT-4o’s potential in real-world
   scenarios involving vision and language.
 
+  **Important Note**
+In most regions, the resources we use may differ based on CloudSlice availability. As a result, the screenshots shown in the instructions may vary accordingly
+
 ## Task 0: Understand the VM and the credentials
 
 In this task, we will identify and understand the credentials that we
@@ -415,6 +418,7 @@ interpret visual content and generate natural language responses.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
