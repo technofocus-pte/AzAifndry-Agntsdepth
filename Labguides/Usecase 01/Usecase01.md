@@ -262,7 +262,7 @@ will be using throughout the lab.
 
 	![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2001/media/image40.png)
 
-9.  If prompted to select the path, then select the **Python** version that shows as the **Global env** path as shown in the image.
+9.  If prompted to select the path, then select the **Python** version that shows as the **Global env( 3.11.9)** path as shown in the image.
 
 	![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2001/media/image41.png)
 
@@ -386,8 +386,7 @@ will be using throughout the lab.
 
 	![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2001/media/image79.png)
 
-3.  In the **Resource group** home page, select the **delete resource
-    group**
+3.  In the **Resource group** home page, select the **delete resources**
 
 	![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2001/media/image80.png)
 
@@ -416,6 +415,7 @@ interpret visual content and generate natural language responses.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
