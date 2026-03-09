@@ -92,6 +92,9 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdep
   If you do not have an account, please create one by visiting:  
   https://github.com/signup
 
+**Important Note**
+In most regions, the resources we use may differ based on CloudSlice availability. As a result, the screenshots shown in the instructions may vary accordingly
+
 ## Task 1: Retrieve resource group name and location
 
 1.  Open a browser go to +++https://portal.azure.com+++ and sign in with
@@ -390,5 +393,6 @@ code transformation, explored scalable modernization architecture, and
 successfully completed the end-to-end modernization process. This
 foundation equips you to accelerate large-scale modernization
 initiatives using Microsoft Foundry.
+
 
 
