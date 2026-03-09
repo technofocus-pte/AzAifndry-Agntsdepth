@@ -124,13 +124,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdep
     following URL: +++https://github.com/technofocus-pte/codesolutionaccelerator+++
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image12.png)
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/a1.png)
 
 2.  Click on **fork** to fork the repo. Give unique name to the repo and
     click on **Create repo** button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image13.png)
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/a2.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image14.png)
@@ -138,7 +138,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdep
 3.  Click on **Code -\> Codespaces -\> Create codespace on main**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image15.png)
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/a3.png)
 
 4.  Wait for the Codespaces environment to setup .It takes few minutes
     to setup completely.
@@ -390,4 +390,5 @@ code transformation, explored scalable modernization architecture, and
 successfully completed the end-to-end modernization process. This
 foundation equips you to accelerate large-scale modernization
 initiatives using Microsoft Foundry.
+
 
