@@ -295,3 +295,4 @@ then press the Enter button.
 1. Enter +++@lab.CloudResourceGroup(ResourceGroup1).Name+++ in the text box to confirm deletion.
 
 1. Select **Delete**.
+
