@@ -1,4 +1,4 @@
-
+<img width="589" height="316" alt="image" src="https://github.com/user-attachments/assets/e30620c0-1cff-400e-90ef-c15871691342" />
 # Usecase 07- Safeguard your agents with AI Red Teaming Agent in Microsoft Foundry
 
 **Scenario**
@@ -496,19 +496,18 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdep
 
     +++export AZURE_AI_AGENT_NAME="agent-template-assistant"+++
 
-1. Go back to the Microsoft Azure Portal select **Home**.
+1. Go back to the Microsoft Foundry 
 
-1. Select **View all resources**.
-
-1. Select the **Foundry** project where the type is **Foundry**.
-
-1. In the left hand panel, select **Resource Management**, then select **Endpoint**.
-
-1. Copy the **API endpoint**.
-
+1. Copy the **Microsoft Foundry project endpont**.
+   
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2007/media/a1.png)
 1. Go back to Github Cospaces and select the **test_utils.py** under the **test** folder in the left hand panel.
 
 1. Paste the endpoint between the empty double quotes on line 40 after **AZURE_EXISTING_AIPROJECT_ENDPOINT**.
+2. Run the below script below
+
+	+++AZURE_EXISTING_AIPROJECT_ENDPOINT="Microsoft Foundry project endpont"+++
 
 1. Run the below script below.
 
@@ -721,3 +720,4 @@ real-world usage and ongoing model safety.
 This end-to-end workflow equips Zava with a reliable, secure, and
 scalable AI assistant that provides accurate information while meeting
 enterprise-grade safety and governance standards.
+
