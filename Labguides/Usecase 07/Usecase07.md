@@ -1,5 +1,4 @@
-<img width="589" height="316" alt="image" src="https://github.com/user-attachments/assets/e30620c0-1cff-400e-90ef-c15871691342" />
-# Usecase 07- Safeguard your agents with AI Red Teaming Agent in Microsoft Foundry
+## Usecase 07- Safeguard your agents with AI Red Teaming Agent in Microsoft Foundry
 
 **Scenario**
 
@@ -720,4 +719,5 @@ real-world usage and ongoing model safety.
 This end-to-end workflow equips Zava with a reliable, secure, and
 scalable AI assistant that provides accurate information while meeting
 enterprise-grade safety and governance standards.
+
 
