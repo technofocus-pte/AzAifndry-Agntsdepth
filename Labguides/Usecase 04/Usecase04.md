@@ -138,7 +138,7 @@ will be using throughout the lab.
 ### Task 3 : Open development environment
 
 1.  Open your browser, navigate to the address bar, type or paste the following
-    URL: +++https://github.com/Azure-Samples/rag-postgres-openai-python/+++
+    URL: +++https://github.com/technofocus-pte/rag-postgres-openai+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2004/media/image13.jpeg)
 
