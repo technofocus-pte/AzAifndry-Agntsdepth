@@ -41,7 +41,8 @@ param principalId string = ''
   'uksouth'
   'westeurope'
   'westus'
-  'westus3'
+  'westus3' 
+  'northeurope'
 ])
 @metadata({
   azd: {
