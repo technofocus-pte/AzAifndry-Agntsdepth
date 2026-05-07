@@ -222,7 +222,7 @@ will be using throughout the lab.
     ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2004/media/img3.png)
 
 8.  When prompted, **enter a value for the 'openAILocation'
-    infrastructure parameter** select the region **@lab.CloudResourceGroup(ResourceGroup1).Location**
+    infrastructure parameter** select the region **Sweden central**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2004/media/image26.png)
 
