@@ -372,8 +372,8 @@ GitHub, Microsoft Foundry, OpenAI, and others.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2003/media/image38.png)
 
-1.  In the search bar, type **gpt-1.1-mini**, then select **OpenAI
-    GPT-1.1-mini** hosted by GitHub and select +**Add Model**
+1.  In the search bar, type **gpt-4.1-mini**, then select **OpenAI
+    GPT-4.1-mini** hosted by GitHub and select +**Add Model**
 
     ![A screenshot of a computer program AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2003/media/image39.png)
 
@@ -384,7 +384,7 @@ GitHub, Microsoft Foundry, OpenAI, and others.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2003/media/image41.png)
 
-11. Select **Mistral Small 1.1** is an optimized smaller model with
+11. Select **Mistral Small 3.1** is an optimized smaller model with
     faster response times and lower costs. Click **Add model** on each
     model tile to add them to your collection.
 
@@ -403,7 +403,7 @@ GitHub, Microsoft Foundry, OpenAI, and others.
 	![Previous lab section](https://github.com/microsoft/ignite25-LAB512-prototyping-multimodal-agents-with-microsoft-foundry-and-the-ai-toolkit/blob/main/lab/instructions/01_Get_Started.md).
 
 14. In the **Model** field, you'll see the name of the model you just
-    selected, for example **Mistral Small 1.1 (via GitHub)**.
+    selected, for example **Mistral Small 3.1 (via GitHub)**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2003/media/image44.png)
@@ -413,8 +413,8 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdep
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2003/media/image45.png)
 
-16. From the dropdown, select your second model (OpenAI GPT-1.1-mini via
-    GitHub if Mistral Small 1.1 is already selected)
+16. From the dropdown, select your second model (OpenAI GPT-4.1-mini via
+    GitHub if Mistral Small 3.1 is already selected)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2003/media/image46.png)
