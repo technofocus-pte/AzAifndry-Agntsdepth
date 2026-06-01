@@ -133,7 +133,7 @@ will be using throughout the lab.
     1.  **Subscription**: **@lab.CloudSubscription.Name**
     2.  **Resource group:** : **ResourceGroup1**
 	
-    3.  **Region**: For this lab, you will use a  **gpt-4-vision**
+    3.  **Region**: For this lab, you will use a  **gpt-4o**
         model. This model is currently only available in [certain
         regions](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#embeddings-models). 
 		Please try **@lab.CloudResourceGroup(ResourceGroup1).Location** 
