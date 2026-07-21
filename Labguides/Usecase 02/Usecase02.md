@@ -237,6 +237,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdep
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/image32.png)
 
+12. You can run the ACR build and push script from the project root. Use the appropriate command for your shell:
+
+     +++.\scripts\build_and_push_images.ps1+++
+
+	  ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/img1.png)
+
 ## Task 4: Verify deployed resources in the Azure portal
 
 1.  Select **Resource groups**
