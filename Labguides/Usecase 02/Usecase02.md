@@ -124,7 +124,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdep
 ## Task 2: Open Github Codespaces environment
 
 1.  Open your browser, navigate to the address bar, type or paste the
-    following URL: +++https://github.com/technofocus-pte/aicodesolutionaccelerator+++
+    following URL: +++https://github.com/technofocus-pte/code-solution-accelerator.git+++
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2002/media/a1.png)
