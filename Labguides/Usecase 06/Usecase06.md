@@ -119,7 +119,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdep
 ## Task 2: Open Github Codespaces environment
 
 1.  Open your browser, navigate to the address bar, type or paste the
-    following URL: +++https://github.com/technofocus-pte/MultiAgentAccelerator/tree/main+++
+    following URL: +++https://github.com/technofocus-pte/MultiAgent-CustomAutomation.git+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2006/media/image12.png)
 
