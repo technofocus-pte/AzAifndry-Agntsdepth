@@ -64,7 +64,7 @@ GitHub account -- You are expected to have your own GitHub login credentials. If
 ## Task 2: Open development environment
 
 1.  Open your browser, navigate to the address bar, type or paste the
-    following URL: +++https://github.com/technofocus-pte/azuresearchopenaidemo.git+++ 
+    following URL: +++https://github.com/technofocus-pte/azuresearchopenai.git+++ 
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/AzAifndry-Agntsdepth/refs/heads/Cloudslice/Labguides/Usecase%2005/media/image11.png)
 
