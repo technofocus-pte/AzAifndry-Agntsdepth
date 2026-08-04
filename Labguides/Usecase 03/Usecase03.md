@@ -1,3 +1,15 @@
+---
+lab:
+  title: Usecase 03- Prototyping multimodal agents with Microsoft Foundry and the AI Toolkit
+  description: In this task, you will explore the AI Toolkit Model Catalog to discover, filter, and compare models for your multimodal agent project. The Model Catalog provides access to models from various providers including GitHub, Microsoft Foundry, OpenAI, and others.
+  duration: 6 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Foundry
+    - GitHub
+---
+
 # Usecase 03- Prototyping multimodal agents with Microsoft Foundry and the AI Toolkit
 
 ## Scenario
