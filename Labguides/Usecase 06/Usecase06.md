@@ -1,3 +1,12 @@
+---
+lab:
+  title: Usecase 06 - Autonomous Multi-Agent Employee Onboarding Orchestration
+  description: In this scenario, Contoso’s Human Resources Team uses a multi-agent AI system to streamline the onboarding of a new employee. Instead of manually coordinating with IT, facilities, and payroll teams, AI agents collaborate to collect required details, plan onboarding tasks, and prepare everything needed for the employee’s first day.
+  duration: 10 minutes
+  level: 400
+  islab: true
+---
+
 # **Usecase 06 - Autonomous Multi-Agent Employee Onboarding Orchestration**
 
 ![image](./media/image1.png)
