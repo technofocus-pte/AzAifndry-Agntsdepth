@@ -1,3 +1,14 @@
+---
+lab:
+  title: Usecase 02 - Modernize your code with agents with Microsoft Foundry
+  description: By the end of the lab, you gained hands-on experience with agent-driven code transformation, explored scalable modernization architecture, and successfully completed the end-to-end modernization process. This foundation equips you to accelerate large-scale modernization initiatives using Microsoft Foundry.
+  duration: 10 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Foundry
+---
+
 
 # Usecase 02 - Modernize your code with agents with Microsoft Foundry 
 
