@@ -1,3 +1,12 @@
+---
+lab:
+  title: Use Case 01- Developing Multimodal AI Applications for Image Classification
+  description: scenarios involving vision and language.
+  duration: 5 minutes
+  level: 200
+  islab: true
+---
+
 
 # Use Case 01- Developing Multimodal AI Applications for Image Classification
 
