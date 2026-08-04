@@ -1,3 +1,14 @@
+---
+lab:
+  title: Use case 08 - Moderate text and images with content safety in Azure AI Content Safety Studio
+  description: Azure AI Content Safety detects harmful user-generated and AI-generated content in applications and services. Azure AI Content Safety includes text and image APIs that allow you to detect material that is harmful. Microsoft Azure also has an interactive Content Safety Studio that allows you to view, explore and try out sample code for detecting harmful content across different modalities.
+  duration: 5 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+---
+
 
 # Use case 08 - Moderate text and images with content safety in Azure AI Content Safety Studio
 
