@@ -1,3 +1,15 @@
+---
+lab:
+  title: Use case 05-Developing Intelligent Chat Applications with Azure RAG
+  description: This use case you through the process of developing a sophisticated chat application using the Retrieval Augmented Generation (RAG) pattern on the Azure platform. By leveraging Azure OpenAI Service and Azure Cognitive Search, you will create a chat application that can intelligently answer questions using your own data. This lab uses a fictitious company, Contoso Electronics, as a case study to demonstrate how to build a ChatGPT-like experience over enterprise data, covering aspects such as employee benefits, internal policies, and job roles.
+  duration: 118 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure OpenAI Service
+---
+
 ## Use case 05-Developing Intelligent Chat Applications with Azure RAG
 
 **Introduction**
