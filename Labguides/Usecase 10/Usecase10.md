@@ -1,3 +1,15 @@
+---
+lab:
+  title: 'Task 10: Deploying and Evaluating Fine-Tuned GPT Models in Azure AI Projects'
+  description: In this use case, you work for a travel-planning company building a conversational assistant that offers friendly, inspiring travel suggestions while avoiding tasks like booking flights or hotels. Through Microsoft Foundry, you will deploy a base model, fine-tune it using curated training examples, evaluate its behavior, and compare performance between the base and fine-tuned versions. This hands-on exercise demonstrates how fine-tuning creates more reliable, tailored conversational experiences for real-world applications.
+  duration: 30 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Microsoft Foundry
+---
+
 
 # Task 10: Deploying and Evaluating Fine-Tuned GPT Models in Azure AI Projects
 

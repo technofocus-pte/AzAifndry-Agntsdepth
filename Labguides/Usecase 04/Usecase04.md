@@ -1,3 +1,16 @@
+---
+lab:
+  title: Usecase 04 - Deploying and Testing a Custom Chat Application with PostgreSQL
+  description: In this use case, you will set up a comprehensive development environment, deploy a chat application integrated with PostgreSQL, and verify its deployment on Azure. This involves installing essential tools like Azure CLI, Docker, and Visual Studio Code ( we have already done it for you on host env ), configuring user roles in Azure, deploying the application using Azure Developer CLI, and interacting with the deployed resources to ensure functionality.
+  duration: 45 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure
+    - Visual Studio
+    - Visual Studio Code
+---
+
 # Usecase 04 - Deploying and Testing a Custom Chat Application with PostgreSQL
 
 **Objective:**

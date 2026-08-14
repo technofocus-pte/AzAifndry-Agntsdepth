@@ -1,3 +1,15 @@
+---
+lab:
+  title: Usecase 09- Building Multimodal AI Applications Using GPT-4o with Azure OpenAI
+  description: In this use case, participants explored how to build an end-to-end AI workflow using Azure OpenAI and Azure AI Foundry. The lab demonstrated how to create and configure cloud resources, deploy AI models, and interact with them using Python notebooks. Participants learned how multimodal AI models can process both text and images, enabling advanced AI-driven applications. By integrating these capabilities into a development environment and a simple web application, the lab showcased how organizations can build intelligent media and video generation solutions using Azure AI services
+  duration: 5 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure AI services
+---
+
 ## Usecase 09- Building Multimodal AI Applications Using GPT-4o with Azure OpenAI
 **Introduction**
 
